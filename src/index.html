@@ -1,0 +1,422 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thirumurugan R</title>
+    <link href="./output.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js" defer></script>
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.1/ScrollTrigger.min.js" defer></script>
+
+    <script src="script.js" defer></script>
+</head>
+
+<body class="font-kanit p-0 m-0 bg-gradient-to-r from-cyan-500 to-blue-500 text-white">
+    <header>
+        <nav id="navbar_1" class="flex items-center p-6 text-lg">
+            <!-- Left Section -->
+            <div class="inside_nav flex-1">
+                <h1>THIRUMURUGAN R</h1>
+            </div>
+            
+            <!-- Center Section -->
+            <div class="inside_nav flex-1 text-black rounded-full text-center space-x-8 bg-white">
+                <a class="hover:text-orange-600" href="#">Home</a>
+                <a class="hover:text-orange-600" href="#skills">Skills</a>
+                <a class="hover:text-orange-600" href="#projects">Projects</a>
+            </div>
+            
+            <!-- Right Section -->
+            <div class="inside_nav flex items-center justify-end flex-1 mr-3">
+                <button 
+                    id="alert_here" 
+                    class="bg-orange-500 rounded-full px-6 py-2 w-[145px] flex-shrink-0" 
+                    onclick="getQuote()">Get a Quote
+                </button>
+            </div>
+        </nav>
+    </header>
+    
+    
+    
+
+    <main>
+        <!-- Name section -->
+        <section>
+            <div class="flex w-full h-80 mt-16">
+              <div class="flex-1 flex items-center justify-end m-12">
+                <img src="../assets/thiru.png" alt="Thiru" class="w-60 h-60 rounded-full border-8 drop-shadow-xl">
+              </div>
+              <div class="name_here flex-1 items-center pt-32">
+                <h1>THIRUMURUGAN R</h1>
+                <p>I am an AI & ML Engineer.</p>
+              </div>
+            </div>
+          </section>
+
+
+        <!-- About Section-->
+        <section>
+            <div class="mt-14 ">
+                <div class="mx-auto max-w-4xl rounded-lg">
+                    <h1 class="text-center text-2xl p-4">About Me</h1>
+                    <p class="text-center text-xl p-6">Welcome to my professional space!. I am having 1
+                        year experinece in Artificial Intelligence and Data Science. I completed B.Tech Artificial
+                        Intelligence and Data Science in Dhaanish Ahmed College of Engineering. Explore my projects and
+                        connect with me on LinkedIn to learn more about my work and collaborations.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- skill section -->
+        <section>
+            <div id="skills" class="text-center py-3 mt-12">
+                <h1 class="text-5xl">Explore my Skills</h1>
+
+                <div class="flex max-w-5xl gap-8 mx-auto justify-between mt-12 group">
+                    <div
+                        class="bg-white/10 duration-500 p-8 rounded-xl w-72 space-y-3 cursor-pointer group-hover:blur-sm hover:!blur-none group-hover:scale-[0.85] hover:!scale-100">
+                        <h1 class="text-2xl">Technical Skills</h1>
+                        <div>
+
+                            <h3 class="text-white mb-2">Python</h3>
+                            <div class="w-full bg-white/20 rounded-full h-4">
+                                <div class="bg-orange-600 h-4 rounded-full" style="width: 60%;"></div>
+                            </div>
+                        </div>
+                        <div>
+                            <h3 class="text-white mb-2">HTML</h3>
+                            <div class="w-full bg-white/20 rounded-full h-4">
+                                <div class="bg-blue-600 h-4 rounded-full" style="width: 80%;"></div>
+                            </div>
+                        </div>
+
+                        <!-- CSS -->
+                        <div>
+                            <h3 class="text-white mb-2">CSS</h3>
+                            <div class="w-full bg-white/20 rounded-full h-4">
+                                <div class="bg-orange-600 h-4 rounded-full" style="width: 80%;"></div>
+                            </div>
+                        </div>
+
+                        <!-- JavaScript -->
+                        <div>
+                            <h3 class="text-white mb-2">JavaScript</h3>
+                            <div class="w-full bg-white/20 rounded-full h-4">
+                                <div class="bg-blue-600 h-4 rounded-full" style="width: 70%;"></div>
+                            </div>
+                        </div>
+
+                        <!-- FastAPI -->
+                        <div>
+                            <h3 class="text-white mb-2">FastAPI</h3>
+                            <div class="w-full bg-white/20 rounded-full h-4">
+                                <div class="bg-orange-600 h-4 rounded-full" style="width: 50%;"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div
+                        class="bg-white/10 duration-500 p-8 rounded-xl w-72 space-y-3 cursor-pointer group-hover:blur-sm hover:!blur-none group-hover:scale-[0.85] hover:!scale-100">
+                        <h1 class="text-2xl">Frameworks</h1>
+                        <div>
+
+                            <h3 class="text-white mb-2">Python-Tensorflow</h3>
+                            <div class="w-full bg-white/20 rounded-full h-4">
+                                <div class="bg-orange-600 h-4 rounded-full" style="width: 60%;"></div>
+                            </div>
+                        </div>
+                        <div>
+                            <h3 class="text-white mb-2">Python-Django</h3>
+                            <div class="w-full bg-white/20 rounded-full h-4">
+                                <div class="bg-blue-600 h-4 rounded-full" style="width: 80%;"></div>
+                            </div>
+                        </div>
+
+                        <!-- CSS -->
+                        <div>
+                            <h3 class="text-white mb-2">Python-Flask</h3>
+                            <div class="w-full bg-white/20 rounded-full h-4">
+                                <div class="bg-orange-600 h-4 rounded-full" style="width: 80%;"></div>
+                            </div>
+                        </div>
+
+                        <!-- JavaScript -->
+                        <div>
+                            <h3 class="text-white mb-2">JavaScript-React</h3>
+                            <div class="w-full bg-white/20 rounded-full h-4">
+                                <div class="bg-blue-600 h-4 rounded-full" style="width: 70%;"></div>
+                            </div>
+                        </div>
+
+                        <!-- FastAPI -->
+                        <div>
+                            <h3 class="text-white mb-2">CSS-Tailwind</h3>
+                            <div class="w-full bg-white/20 rounded-full h-4">
+                                <div class="bg-orange-600 h-4 rounded-full" style="width: 50%;"></div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div
+                        class="bg-white/10 duration-500 p-8 rounded-xl w-72 space-y-6 cursor-pointer group-hover:blur-sm hover:!blur-none group-hover:scale-[0.85] hover:!scale-100">
+                        <h1 class="text-2xl">Domain Skills</h1>
+                        <div class="">
+
+                            <h3 class="text-white mb-2">Artificial Intelligence</h3>
+                            <div class="w-full bg-white/20 rounded-full h-4">
+                                <div class="bg-orange-600 h-4 rounded-full" style="width: 60%;"></div>
+                            </div>
+                        </div>
+                        <div>
+                            <h3 class="text-white mb-2">Machine Learning</h3>
+                            <div class="w-full bg-white/20 rounded-full h-4">
+                                <div class="bg-blue-600 h-4 rounded-full" style="width: 80%;"></div>
+                            </div>
+                        </div>
+
+                        <!-- CSS -->
+                        <div>
+                            <h3 class="text-white mb-2">Deep Learning</h3>
+                            <div class="w-full bg-white/20 rounded-full h-4">
+                                <div class="bg-orange-600 h-4 rounded-full" style="width: 80%;"></div>
+                            </div>
+                        </div>
+
+                        <!-- JavaScript -->
+                        <div>
+                            <h3 class="text-white mb-2">Frontent Development</h3>
+                            <div class="w-full bg-white/20 rounded-full h-4">
+                                <div class="bg-blue-600 h-4 rounded-full" style="width: 70%;"></div>
+                            </div>
+                        </div>
+
+                        <!-- FastAPI -->
+                        <div>
+                            <h3 class="text-white mb-2">Backend Development</h3>
+                            <div class="w-full bg-white/20 rounded-full h-4">
+                                <div class="bg-orange-600 h-4 rounded-full" style="width: 50%;"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Project Section -->
+
+        <section>
+            <h1 id="projects" class="text-center p-8 mt-4 text-5xl">Explore My Projects</h1>
+            <div class="relative flex max-w-5xl mx-auto">
+                <!-- First Black Background Div -->
+                <div class="w-5/12 h-72 rounded-lg bg-black p-6 m-14 overflow-y-scroll scrollbar-hide text-center">
+                    <h1 class="text-white p-4">End to End ML Project</h1>
+                    <img class="p-4 rounded-lg" src="../assets/ai.jpeg" alt="AI Project Image" class="w-16 h-16" />
+                    <p class="text-white text-center p-6">
+                        I have created a machine learning model that predicts insurance costs
+                        based on various features. Click below to see my GitHub repository!
+                    </p>
+
+
+                    <h1 class="text-2xl text-white p-6">Packages Used</h1>
+                    <div>
+
+                        <h3 class="text-white mb-2">Scikit Learn</h3>
+                        <div class="w-full bg-white/20 rounded-full h-4">
+                            <div class="bg-orange-600 h-4 rounded-full" style="width: 90%;"></div>
+                        </div>
+                    </div>
+                    <div>
+                        <h3 class="text-white mb-2">Numpy</h3>
+                        <div class="w-full bg-white/20 rounded-full h-4">
+                            <div class="bg-blue-600 h-4 rounded-full" style="width: 80%;"></div>
+                        </div>
+                    </div>
+
+                    <!-- CSS -->
+                    <div>
+                        <h3 class="text-white mb-2">Pandas</h3>
+                        <div class="w-full bg-white/20 rounded-full h-4">
+                            <div class="bg-orange-600 h-4 rounded-full" style="width: 80%;"></div>
+                        </div>
+                    </div>
+
+                    <!-- JavaScript -->
+                    <div>
+                        <h3 class="text-white mb-2">Matplotlib</h3>
+                        <div class="w-full bg-white/20 rounded-full h-4">
+                            <div class="bg-blue-600 h-4 rounded-full" style="width: 70%;"></div>
+                        </div>
+                    </div>
+
+                    <!-- FastAPI -->
+                    <div>
+                        <h3 class="text-white mb-2">Seaborn</h3>
+                        <div class="w-full bg-white/20 rounded-full h-4">
+                            <div class="bg-orange-600 h-4 rounded-full" style="width: 50%;"></div>
+                        </div>
+                    </div>
+                    <a href="https://github.com/Thirumurugan240/End-end-mlproject" target="_blank"
+                        class="p-18 m-14 flex items-center justify-center bg-orange-700 hover:bg-sky-600 text-white rounded-lg ">
+                        <i class="fab fa-github mr-2"></i> GitHub
+                    </a>
+                </div>
+
+                <!-- Second Orange Background Div Overlapping the First Black Div -->
+                <div
+                    class="absolute top-1/2 left-1/2 transform -translate-x-24 -translate-y-1/2 w-3/5 h-40 bg-orange-700/30 backdrop-blur-md text-center rounded-lg shadow-lg p-4 border border-white/30 transition-transform duration-300 ease-in-out hover:scale-105 hover:z-10">
+                    <p class="text-white">
+                        I have built an End-to-End Machine Learning Model that predicts insurance costs based on
+                        individual features like age, health conditions, and other factors. I implemented multiple
+                        models
+                        and evaluated them based on accuracy to find the best performing one. This project has provided
+                        me
+                        with deep insights into data preprocessing, model selection, and performance evaluation.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <div class="relative flex max-w-5xl mx-auto">
+                <!-- Second Orange Background Div (Now on the Left) -->
+                <div
+                    class="absolute z-10 top-1/2 left-1/4 transform -translate-x-64 -translate-y-1/2 w-3/5 h-40 bg-orange-700/30 backdrop-blur-md text-center rounded-lg shadow-lg p-4 border border-white/30 transition-transform duration-300 ease-in-out hover:scale-105 hover:z-10">
+                    <p class="text-white">
+                        Our project combines micro irrigation with AI to accurately forecast crop water requirements. By
+                        analyzing various factors like soil moisture, weather forecasts, and plant type, our system
+                        intelligently controls valves to deliver precise amounts of water, optimizing crop growth and
+                        conserving resources.
+                    </p>
+                </div>
+
+                <!-- First Black Background Div (Now on the Right) -->
+                <div
+                    class="relative w-5/12 h-72 rounded-lg bg-black p-6 m-14 ml-auto overflow-y-scroll scrollbar-hide text-center">
+                    <h1 class="text-white p-4">End to End ML Project</h1>
+                    <img class="p-4 rounded-lg" src="../assets/test.jpeg" alt="AI Project Image" class="w-16 h-16" />
+                    <p class="text-white text-center p-6">
+                        I have created a machine learning model that predicts insurance costs
+                        based on various features. Click below to see my GitHub repository!
+                    </p>
+
+
+                    <h1 class="text-2xl text-white p-6">Packages Used</h1>
+                    <div>
+
+                        <h3 class="text-white mb-2">Scikit Learn</h3>
+                        <div class="w-full bg-white/20 rounded-full h-4">
+                            <div class="bg-orange-600 h-4 rounded-full" style="width: 90%;"></div>
+                        </div>
+                    </div>
+                    <div>
+                        <h3 class="text-white mb-2">Numpy</h3>
+                        <div class="w-full bg-white/20 rounded-full h-4">
+                            <div class="bg-blue-600 h-4 rounded-full" style="width: 80%;"></div>
+                        </div>
+                    </div>
+
+                    <!-- CSS -->
+                    <div>
+                        <h3 class="text-white mb-2">Pandas</h3>
+                        <div class="w-full bg-white/20 rounded-full h-4">
+                            <div class="bg-orange-600 h-4 rounded-full" style="width: 80%;"></div>
+                        </div>
+                    </div>
+
+                    <!-- JavaScript -->
+                    <div>
+                        <h3 class="text-white mb-2">Matplotlib</h3>
+                        <div class="w-full bg-white/20 rounded-full h-4">
+                            <div class="bg-blue-600 h-4 rounded-full" style="width: 70%;"></div>
+                        </div>
+                    </div>
+
+                    <!-- FastAPI -->
+                    <div>
+                        <h3 class="text-white mb-2">Seaborn</h3>
+                        <div class="w-full bg-white/20 rounded-full h-4">
+                            <div class="bg-orange-600 h-4 rounded-full" style="width: 50%;"></div>
+                        </div>
+                    </div>
+                    <a href="https://github.com/Thirumurugan240/Micro-Irrigation-By-Integrating-AI-To-Predict-Crop-Water-Needs-And-Automate-Valves."
+                        target="_blank"
+                        class="p-18 m-14 flex items-center justify-center bg-orange-700 hover:bg-sky-600 text-white rounded-lg ">
+                        <i class="fab fa-github mr-2"></i> GitHub
+                    </a>
+                </div>
+
+            </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="bg-gray-900 text-white py-10 mt-28">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex flex-col md:flex-row justify-between items-center md:items-start">
+                <!-- About Section -->
+                <div class="mb-8 md:mb-0">
+                    <h2 class="text-2xl font-bold">Thirumurugan R</h2>
+                    <p class="mt-2 text-gray-400">
+                        Passionate AI & ML Engineer. Let's build something amazing together!
+                    </p>
+                </div>
+
+                <!-- Navigation Links -->
+                <div class="flex flex-col md:flex-row gap-8 mb-8 md:mb-0">
+                    <div>
+                        <h3 class="font-semibold text-lg">Quick Links</h3>
+                        <ul class="mt-2 space-y-2">
+                            <li><a href="#" class="hover:underline">Home</a></li>
+                            <li><a href="#skills" class="hover:underline">Skills</a></li>
+                            <li><a href="#projects" class="hover:underline">Projects</a></li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h3 class="font-semibold text-lg">Connect</h3>
+                        <ul class="mt-2 space-y-2">
+                            <li><a href="mailto:thirumuruganchandru01@gmail.com" class="hover:underline">Email</a></li>
+                            <li><a href="https://www.linkedin.com/in/thirumurugan" target="_blank"
+                                    class="hover:underline">LinkedIn</a></li>
+                            <li><a href="https://github.com/Thirumurugan240" target="_blank"
+                                    class="hover:underline">GitHub</a></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Social Media Icons -->
+                <div class="flex space-x-6">
+                    <a href="www.linkedin.com/in/thirumurugan-r-85a41b24a" target="_blank" class="hover:text-blue-500">
+                        <i class="fab fa-linkedin text-2xl"></i>
+                    </a>
+                    <a href="https://github.com/Thirumurugan240" target="_blank" class="hover:text-gray-400">
+                        <i class="fab fa-github text-2xl"></i>
+                    </a>
+                    <a href="https://www.instagram.com/developedbythiru?igsh=dWV0YWhwdG9iYndr" target="_blank"
+                        class="hover:text-pink-500">
+                        <i class="fab fa-instagram text-2xl"></i>
+                    </a>
+                </div>
+            </div>
+
+            <!-- Divider -->
+            <div class="border-t border-gray-700 mt-10"></div>
+
+            <!-- Copyright -->
+            <div class="text-center mt-4 text-gray-500">
+                <p>&copy; 2025 Thirumurugan R. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+
+</body>
+
+</html>
